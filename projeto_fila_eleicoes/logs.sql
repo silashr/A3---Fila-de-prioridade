@@ -1,0 +1,1 @@
+-- Será preenchido pela exportação da interface após gerar eventos.

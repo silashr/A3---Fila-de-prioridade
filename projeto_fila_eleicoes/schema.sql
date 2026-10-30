@@ -1,0 +1,10 @@
+-- schema.sql
+CREATE TABLE IF NOT EXISTS auditoria (
+ id INTEGER PRIMARY KEY AUTOINCREMENT, evento TEXT NOT NULL, eleitor_id INTEGER NOT NULL,
+ nome TEXT NOT NULL, categoria TEXT NOT NULL, instante TEXT NOT NULL, detalhes TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS atendimentos (
+ id INTEGER PRIMARY KEY AUTOINCREMENT, eleitor_id INTEGER NOT NULL, nome TEXT NOT NULL,
+ categoria TEXT NOT NULL, chegada TEXT NOT NULL, instante TEXT NOT NULL, espera_min INTEGER NOT NULL,
+ pontuacao INTEGER NOT NULL, sla_min INTEGER NOT NULL, dentro_sla INTEGER NOT NULL
+);
